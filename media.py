@@ -18,6 +18,7 @@ frame.grid()
 label = ttk.Label(frame, text="Digite e adicione as notas e clique em 'Calcular Média'")
 label.grid(row=0, column=0, pady=(0, 12))
 
+label_notas = ttk.Label
 
 entrada = ttk.Entry(frame, width=20)
 entrada.grid(row=2, column=0, pady=(4, 12))
@@ -39,6 +40,7 @@ def calculing(notas):
         resultado = sum(notas) / len(notas)
         print(f"soma: {sum(notas)}, quantidade: {len(notas)}, média: {resultado}")
         notas.clear()
+
         if resultado >= 7:
             print("Aprovado")
         else:
